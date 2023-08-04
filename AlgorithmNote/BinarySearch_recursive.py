@@ -18,6 +18,8 @@ def binary_serach(array, target, start, end) :
         return binary_serach(array, target, mid + 1, end)
     
 
+
+
 # n(원소의 개수)과 target(찾고자 하는 문자열)을 입력받기
 n, target = list(map(int, input().split()))
 # 전체 원소 입력 받기
