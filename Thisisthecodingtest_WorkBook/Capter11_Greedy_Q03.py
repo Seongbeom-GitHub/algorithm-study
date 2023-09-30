@@ -7,43 +7,43 @@
 # 제한 시간 : 20분
 # 소요 시간 : 22분 (실패)
 
-# 1) 나의 풀이
-# data = list(input())
+# 1) 나의 풀이(수정 / 바르게 출력됨)
+data = list(input())
 
-# zeroGroup = 0
-# oneGroup = 0
+zeroGroup = 0
+oneGroup = 0
 
-# if data[0] == '0' : 
-#     zeroGroup += 1
-# elif data[1] == '1' : 
-#     oneGroup += 1
+if data[0] == '0' : 
+    zeroGroup += 1
+elif data[1] == '1' : 
+    oneGroup += 1
 
-# for i in range(len(data)-1) :
-#     num = data[i]
-#     if num == data[i+1] :
-#         continue
-#     elif data[i+1] == '0' :
-#         oneGroup += 1
-#     elif data[i+1] == '1' :
-#         zeroGroup += 1
+for i in range(len(data)-1) :
+    num = data[i]
+    if num == data[i+1] :
+        continue
+    elif data[i+1] == '0' :
+        zeroGroup += 1
+    elif data[i+1] == '1' :
+        oneGroup += 1
 
-# print(min(zeroGroup, oneGroup))
+print(min(zeroGroup, oneGroup))
 
 # 2) 모범 답안
-data = input()
-count0 = 0
-count1 = 0
+# data = input()
+# count0 = 0
+# count1 = 0
 
-if data[0] == '1' :
-    count0 += 1
-else :
-    count1 += 1
+# if data[0] == '1' :
+#     count0 += 1
+# else :
+#     count1 += 1
 
-for i in range(len(data) - 1) :
-    if data[i] != data[i+1] :
-        if data[i+1] == '1' :
-            count0 += 1
-        else :
-            count1 += 1
+# for i in range(len(data) - 1) :
+#     if data[i] != data[i+1] :
+#         if data[i+1] == '1' :
+#             count0 += 1
+#         else :
+#             count1 += 1
 
-print(min(count0, count1))
+# print(min(count0, count1))
