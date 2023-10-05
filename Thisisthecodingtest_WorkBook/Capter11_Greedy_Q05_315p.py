@@ -14,20 +14,39 @@
 # print(f"{end - start : .5f} sec")
 
 
-# 1) 나의 풀이
-n, m = input().split()
+# 1) 나의 풀이 (성공)
+# n, m = input().split()
 
-ball = list(map(int, input().split()))
+# ball = list(map(int, input().split()))
 
-result = 0
+# result = 0
 
-for i in range(0, len(ball) -1) :
-    for j in range(i+1, len(ball)) :
-        if ball[i] != ball[j] :
-            result += 1
+# for i in range(0, len(ball) -1) :
+#     for j in range(i+1, len(ball)) :
+#         if ball[i] != ball[j] :
+#             result += 1
 
 
-print(result)
+# print(result)
 
 
 # 2) 모범답안
+n, m = map(int, input().split())
+data = list(map, (int, input().split()))
+
+# 무게별 공의 개수를 담는 배열 선언
+array = [0] * 11
+
+# 무게별 공의 개수 증가 
+for x in data :
+    array[x] += 1
+
+# 결과값을 담을 변수
+result = 0
+
+# 1부터 마지막 무게까지
+for i in range(1, m + 1) :
+    n -= array[i]           # 전체개수 - i무게의 공의 개수
+    result += array[i] * n  # i무게의 공의 개수 * 남은 공의 개수 = 증가
+
+print(result)
