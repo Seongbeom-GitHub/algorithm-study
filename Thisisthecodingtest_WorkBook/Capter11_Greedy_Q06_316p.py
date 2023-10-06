@@ -63,7 +63,7 @@ def solution(food_times, k) :
     # 먹기위해 사용한 시간 + (현재 음식의 시간 - 이전 음식의 시간) * 음식의 개수 
     # 즉, 여지것 걸린 시간 + 지금 뽑은 음식을 먹는데 걸리는 시간이 남은 k초 보다 크면 반복문 종료
     while sum_value + ((q[0][0] - previous) * length) <= k :
-        now = heapq.heappop(q)[0]
+        now = heapq.heappop(q)[0]   # 최소값을 꺼내 그 값의 [0]번째 데이터 값을 가져옴
         sum_value += (now - previous) * length
         length -= 1     # 다먹은 음식 제외
         previous = now  # 이전 음식 시간 재설정
