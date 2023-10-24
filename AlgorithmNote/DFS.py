@@ -1,5 +1,5 @@
 # DFS (Depth-First Search) 깊이우선 탐색 알고리즘
-# 스택 / 재귀함수 이용
+# 스택(동작원리) / 재귀함수(구현방법) 이용
 
 # DFS 메서드 정의
 def dfs(graph, v, visited) :
