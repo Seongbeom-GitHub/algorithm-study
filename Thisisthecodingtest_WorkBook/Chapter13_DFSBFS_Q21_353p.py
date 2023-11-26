@@ -19,6 +19,7 @@ graph = []
 for _ in range(n) :
     graph.append(list(map(int, input().split())))
 
+# 북서남동
 dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
