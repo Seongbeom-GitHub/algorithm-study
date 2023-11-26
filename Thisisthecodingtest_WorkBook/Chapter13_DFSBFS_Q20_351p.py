@@ -5,7 +5,7 @@
 # 시간 제한 : 2초
 # 메모리 제한 256MB
 # 풀이 제한 시간 : 60분
-# 소요 시간 : 
+# 소요 시간 : 실패
 # https://acmicpc.net/problem/18428
 
 from itertools import combinations
