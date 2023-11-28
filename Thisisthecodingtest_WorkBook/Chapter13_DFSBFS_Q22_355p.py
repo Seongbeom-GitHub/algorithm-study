@@ -55,12 +55,14 @@ def solution(board):
     for i in range(n):
         for j in range(n):
             new_board[i + 1][j + 1] = board[i][j]
+
     # 너비 우선 탐색(BFS) 수행
     q = deque()
     visited = []
     pos = {(1, 1), (1, 2)} # 시작 위치 설정
     q.append((pos, 0)) # 큐에 삽입한 뒤에
     visited.append(pos) # 방문 처리
+    
     # 큐가 빌 때까지 반복
     while q:
         pos, cost = q.popleft()
