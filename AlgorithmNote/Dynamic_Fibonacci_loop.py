@@ -10,6 +10,6 @@ n = 99
 
 # Fibonacci Fucntion을 반복문으로 구현 (Bottom-Up)
 for i in range(3, n+1) : 
-    d[i - 1] + d[1 - 2]
+    d[i] = d[i - 1] + d[i - 2]
 
-print(d(n))
+print(d[n])
