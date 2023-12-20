@@ -1,4 +1,4 @@
-# (개선된) 다익스트라 알고리즘 / HeapQueue 사용
+# (개선된) 다익스트라 알고리즘 / 우선순위큐(힙큐로 구현)이용
 
 import heapq
 import sys
