@@ -15,7 +15,7 @@ def solution(food_times, k) :
         return -1
     
     q = []
-    for i in range(len(len(food_times))) :
+    for i in range(len(food_times)) :
         # 튜플 (음식 시간, 음식 번호) 형태로 큐에 삽입
         heapq.heappush(q, (food_times[i], i + 1))
         
