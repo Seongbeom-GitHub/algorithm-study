@@ -5,14 +5,6 @@
 # 시간 제한 : 1초
 # 메모리 제한 128MB
 # 제한 시간 : 30분
-# 소요 시간 : 15분 30초 (풀이 완료)
-
-# import math
-# import time
-# start = time.time()
-# end = time.time()
-# print(f"{end - start : .5f} sec")
-
 
 # 1) 나의 풀이 (성공)
 # n, m = input().split()
@@ -25,8 +17,6 @@
 #     for j in range(i+1, len(ball)) :
 #         if ball[i] != ball[j] :
 #             result += 1
-
-
 # print(result)
 
 

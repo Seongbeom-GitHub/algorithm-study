@@ -1,4 +1,4 @@
-#이진탐색 소스코드 구현 (재귀함수)
+# 이진탐색 소스코드 구현 (재귀함수)
 
 def binary_serach(array, target, start, end) :
     if start > end :

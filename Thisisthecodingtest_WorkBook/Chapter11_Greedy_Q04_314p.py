@@ -5,33 +5,14 @@
 # 시간 제한 : 1초
 # 메모리 제한 128MB
 # 제한 시간 : 30분
-# 소요 시간 : 22분 포기
 
-# 1) 나의 풀이
-# coin = list(map(int,input().split()))
-
-# print(coin)
-
-# while True :
-#     result = 1
-
-#     # 코인 1개
-#     for a in coin :
-#         if a == result :
-#             result = a
-#             break
-
-#     # 2개 이상
-#     for b in coin :
-#         for i in (b+1, coin)
-
-# 2) 모범 답안
 n = int(input())
 data = list(map(int, input().split()))
 data.sort()
 
 target = 1
 for x in data :
+    # 더해온 수 보다 다음 수가 더 크다면 브레이크
     if target < x : 
         break
     target += x
