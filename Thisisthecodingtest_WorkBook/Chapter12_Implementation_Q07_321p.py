@@ -11,10 +11,8 @@
 # 1) 나의 풀이 (성공)
 # n = input()
 
-
 # left = n[: int(len(n)/2 - 1)]
 # right = n[int(len(n)/2) : len(n)]
-
 
 # l = 0
 # r = 0
