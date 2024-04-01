@@ -3,6 +3,7 @@
 
 
 from collections import deque
+import sys
 
 # 큐의 크기, 뽑는 개수 입력
 m, n = map(int, input().split())
@@ -22,8 +23,12 @@ for target in targets :
         
         if q.index(target) <= len(q) // 2 :
             while target != q[0] :
-                
+                q.append(q.popleft())
+                count += 1
+        else :
+            while target != q[0] :
+                q.appendleft(q.pop())
+                count += 1
+        
+print(count)
 
-
-
-    # 123456 78910
