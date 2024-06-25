@@ -4,8 +4,8 @@
 # 이해도 : 문제 이해에 다소 시간소요
 # 소요 시간 : 초과
 
-from collections import Counter
 
+from collections import Counter # 모듈 사용
 
 # 문자의 길이 입력
 n = int(input())
@@ -18,6 +18,7 @@ vowel = {'a', 'e', 'i', 'o', 'u'}
 if word1[0] != word2[0] or word1[-1] != word2[-1]:
     print("NO")
 else:
+    # 두번째 문자가 첫번째 문자의 재배열로 이뤄진 문자인지 검사
     if Counter(word1) != Counter(word2) :
         print("NO")
     else : 
