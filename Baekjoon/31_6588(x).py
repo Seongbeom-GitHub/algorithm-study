@@ -19,7 +19,7 @@ for i in range(2, int(1000001 ** 0.5) + 1):
 
 # 소수 리스트 생성
 primes = [i for i in range(1000001) if sosu[i]]
-prime_set = set(primes)  # 소수를 집합으로 변환하여 빠른 검색을 가능하게 함
+prime_set = set(primes)  # 소수를 집합으로 변환하여 빠른 검색을 가능하게 함 (집합 자료형은 해시값을 통한 검색)
 
 results = []
 
