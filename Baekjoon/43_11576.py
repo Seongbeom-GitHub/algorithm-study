@@ -18,7 +18,7 @@ for i in range(len(arr)) :
     deciaml += arr[i] * (a ** i)
 
 # 10진수를 b진법으로 변환
-while deciaml // b : # 몫이 0이 될때까지 반복해서 나누기
+while deciaml // b : # 몫이 0이 될때까지 반복해서 나누기 (0은 False)
     result.append(deciaml % b) # 나머지 값을 저장
     deciaml //= b
 result.append(deciaml) # 마지막 몫을 배열에 추가
