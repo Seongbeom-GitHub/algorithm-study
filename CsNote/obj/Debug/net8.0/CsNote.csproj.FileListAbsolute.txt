@@ -1,0 +1,15 @@
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\bin\Debug\net8.0\CsNote.exe
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\bin\Debug\net8.0\CsNote.deps.json
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\bin\Debug\net8.0\CsNote.runtimeconfig.json
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\bin\Debug\net8.0\CsNote.dll
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\bin\Debug\net8.0\CsNote.pdb
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.AssemblyInfoInputs.cache
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.AssemblyInfo.cs
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.csproj.CoreCompileInputs.cache
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.sourcelink.json
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.dll
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\refint\CsNote.dll
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.pdb
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\CsNote.genruntimeconfig.cache
+C:\dev\workspace\gitRepos\algorithm-study\CsNote\obj\Debug\net8.0\ref\CsNote.dll

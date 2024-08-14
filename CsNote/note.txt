@@ -1,0 +1,46 @@
+// [ C# 핵심 문법 정리! ]
+
+using System;
+using System.Collections.Generic;
+
+// 입력
+int n = int.Parse(Console.ReadLine());
+// 출력
+Console.WriteLine(n);
+
+// 배열
+int[] arr1 = new int[5]; // 크기가 5인 정수형 배열
+int[] arr2 = { 1, 2, 3, 4, 5 }; // 초기화
+
+Console.WriteLine(arr2);
+
+class MathUtils
+{
+    public static int Add(int a, int b)
+    {
+        return a + b;
+    }
+}
+
+// 호출 예
+int result = MathUtils.Add(3, 4); // 객체 생성 없이 호출 가능
+
+
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+// String.Join을 사용하여 리스트 출력
+string result = String.Join(", ", numbers);
+Console.WriteLine(result); // "1, 2, 3, 4, 5" 출력
+
+// 스플릿 입력받기
+string[] inputList = Console.ReadLine().Split();
+
+// 정수형, 문자형 형변환
+int n = int.Parse( 문자 )
+string strNumber = n.ToString();
+
+// for each 문
+foreach (long res in result) {
+    Console.WriteLine(res);
+}
+
