@@ -56,4 +56,39 @@ List<int> numbers = new List<int> { 5, 3, 8, 1, 2 };
 var sortedNumbers = numbers.OrderBy(n => n); // 오름차순
 var sortedNumbersDescending = numbers.OrderByDescending(n => n); // 내림차순
 
+// 리스트 정렬
+List<int> heights = new List<int> { 150, 160, 140, 170, 180 };
+heights.Sort();
 
+// 배열 정렬
+int[] heights = { 150, 160, 140, 170, 180 };
+Array.Sort(heights);
+
+
+
+// 배열에 해당 원소가 있는지 확인
+myArray.Contains(인덱스) // bool 값으로 나옴
+
+// 배열 원소 수
+myArray.Count // int값으로 나옴
+
+// 배열에서 특정 값 제거
+array.RemoveAt(array.Count - 1); // 가장 마지막 인덱스의 요소를 제거함
+
+// [스택 사용]
+using System.Collections.Generic;
+Stack<int> myStack = new Stack<int>();
+myStack.Push();
+myStack.Pop();
+myStack.Peek(); // 가장 위의 원소
+myStack.Clear();
+myStack.Count();
+
+// [큐 사용]
+using System.Collections.Generic;
+Queue<int> q = new Queue<int>();
+q.Enqueue();
+q.Dequeue(); // 큐의 가장 왼쪽에서 Pop
+q.Peek(); // 큐의 가장 왼쪽 요소 확인
+q.Clear();
+q.Count();
