@@ -44,3 +44,16 @@ foreach (long res in result) {
     Console.WriteLine(res);
 }
 
+// int형 배열을 바로 입력받기
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+
+// 정렬
+using System;
+using System.Collections.Generic;
+using System.Linq;
+List<int> numbers = new List<int> { 5, 3, 8, 1, 2 };
+
+var sortedNumbers = numbers.OrderBy(n => n); // 오름차순
+var sortedNumbersDescending = numbers.OrderByDescending(n => n); // 내림차순
+
+

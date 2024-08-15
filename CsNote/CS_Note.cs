@@ -1,19 +1,29 @@
 ﻿using System;
 
-class MathUtils
-{
-    public static int Add(int a, int b)
-    {
-        return a + b;
-    }
-}
+class Program {
 
-class Program
-{
-    static void Main()
-    {
-        // 호출 예
-        int result = MathUtils.Add(3, 4); // 객체 생성 없이 호출 가능
-        Console.WriteLine(result); // 결과 출력
+    static void Main() {
+        
+        int[] inputValue = Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+        int n = inputValue[0];
+        int m = inputValue[1];
+
+        for(int i = 1; i < n + 1; i++) {
+            for(int j = 1; j < n + 1; j++) {
+                
+                if (i != j) {
+                    Console.WriteLine($"{i} {j}");
+
+                }
+
+
+            }
+        }
+
     }
+    
+    
+    
+    
+    
 }
