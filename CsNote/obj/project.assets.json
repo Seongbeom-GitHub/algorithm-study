@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\SB\\.nuget\\packages\\": {}
+    "C:\\Users\\sb_kim\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\gitRepos\\algorithm-study\\CsNote\\CsNote.csproj",
+      "projectUniqueName": "C:\\dev\\workspace\\gitRepos\\algorithm-study\\CsNote\\CsNote.csproj",
       "projectName": "CsNote",
-      "projectPath": "C:\\Dev\\gitRepos\\algorithm-study\\CsNote\\CsNote.csproj",
-      "packagesPath": "C:\\Users\\SB\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\gitRepos\\algorithm-study\\CsNote\\obj\\",
+      "projectPath": "C:\\dev\\workspace\\gitRepos\\algorithm-study\\CsNote\\CsNote.csproj",
+      "packagesPath": "C:\\Users\\sb_kim\\.nuget\\packages\\",
+      "outputPath": "C:\\dev\\workspace\\gitRepos\\algorithm-study\\CsNote\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SB\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sb_kim\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
