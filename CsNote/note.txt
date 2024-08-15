@@ -32,6 +32,12 @@ List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
 string result = String.Join(", ", numbers);
 Console.WriteLine(result); // "1, 2, 3, 4, 5" 출력
 
+
+// 배열에 있는 int 값을 join으로 출력
+Console.WriteLine(string.Join(" ", result)); // result는 int형 배열임
+
+
+
 // 스플릿 입력받기
 string[] inputList = Console.ReadLine().Split();
 
@@ -105,3 +111,17 @@ for (int i = 0; i < n; i++) {
     maxValue = Math.Max(maxValue, dp[i]);
 
 }
+
+// foreach문
+foreach (var item in collection)
+{
+    // item에 대해 수행할 작업
+}
+
+
+// 아스키코드 변환
+int asc = 65;
+char ascChr = (char)asc;
+
+char chr = 'A';
+int ascInt = (int)chr;
