@@ -92,3 +92,16 @@ q.Dequeue(); // 큐의 가장 왼쪽에서 Pop
 q.Peek(); // 큐의 가장 왼쪽 요소 확인
 q.Clear();
 q.Count();
+
+
+// 최대값 최소값 함수
+Math.Max()
+Math.Min()
+
+
+// 배열에서 최댓값 찾기
+int maxValue = 0;
+for (int i = 0; i < n; i++) {
+    maxValue = Math.Max(maxValue, dp[i]);
+
+}
