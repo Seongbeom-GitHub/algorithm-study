@@ -1,31 +1,23 @@
-// [ C# 핵심 문법 정리! ]
+// [ C# 핵심 문법 정리 ]
 
 using System;
 using System.Collections.Generic;
 
-// 입력
+// int형 1개 입력
 int n = int.Parse(Console.ReadLine());
+// int형 배열 입력
+int[] A = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+
+
 // 출력
 Console.WriteLine(n);
 
 // 배열
 int[] arr1 = new int[5]; // 크기가 5인 정수형 배열
 int[] arr2 = { 1, 2, 3, 4, 5 }; // 초기화
+Console.WriteLine(string.Join(", ", arr2));
 
-Console.WriteLine(arr2);
-
-class MathUtils
-{
-    public static int Add(int a, int b)
-    {
-        return a + b;
-    }
-}
-
-// 호출 예
-int result = MathUtils.Add(3, 4); // 객체 생성 없이 호출 가능
-
-
+// 리스트형 선언
 List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
 
 // String.Join을 사용하여 리스트 출력
@@ -36,6 +28,13 @@ Console.WriteLine(result); // "1, 2, 3, 4, 5" 출력
 // 배열에 있는 int 값을 join으로 출력
 Console.WriteLine(string.Join(" ", result)); // result는 int형 배열임
 
+// 배열 요소 정렬
+Array.Sort(numbers);
+Array.Reverse(numbers); // 내림차순X, 순서가 뒤집어짐
+
+// 리스트 정렬
+numbers.Sort();
+numbers.Reverse(); // 내림차순X, 순서가 뒤집어짐
 
 
 // 스플릿 입력받기
@@ -45,13 +44,27 @@ string[] inputList = Console.ReadLine().Split();
 int n = int.Parse( 문자 )
 string strNumber = n.ToString();
 
+
+
+// 문자열 인덱싱
+string str = "Hello, World!";
+        
+char lastChar = str[str.Length - 1]; // 마지막 요소 뽑기
+
+// 인덱스 7부터 끝까지 슬라이싱
+string substring = str.Substring(7); // "World!"
+
+// 인덱스 0부터 5까지 슬라이싱 (5자 추출)
+string substring2 = str.Substring(0, 5); // "Hello"
+
+
+
+
 // for each 문
 foreach (long res in result) {
     Console.WriteLine(res);
 }
 
-// int형 배열을 바로 입력받기
-int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
 // 정렬
 using System;
@@ -125,3 +138,18 @@ char ascChr = (char)asc;
 
 char chr = 'A';
 int ascInt = (int)chr;
+
+// 그래프 인접리스트
+int n = 5; // 노드 수
+List<int>[] graph = new List<int>[n + 1]; // n+1 크기로 초기화 (0번 인덱스 사용 안 함)
+
+for (int i = 0; i <= n; i++)
+{
+    graph[i] = new List<int>(); // 각 노드에 대한 리스트 초기화
+}
+
+// 연결 추가
+graph[1].Add(2);
+graph[2].Add(1); // 양방향 연결
+graph[1].Add(3);
+graph[3].Add(1); // 양방향 연결
