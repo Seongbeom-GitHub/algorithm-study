@@ -153,3 +153,32 @@ graph[1].Add(2);
 graph[2].Add(1); // 양방향 연결
 graph[1].Add(3);
 graph[3].Add(1); // 양방향 연결
+
+
+
+// 진수 변환
+// 10진수 -> 2, 4, 16진수
+int number = 42;
+
+string binary = Convert.ToString(number, 2);
+string octal = Convert.ToString(number, 8);
+string hexadecimal = Convert.ToString(number, 16);
+
+// 2, 4, 16진수 -> 10진수
+string binary = "101010";
+string octal = "52";
+string hexadecimal = "2A";
+
+int decimalFromBinary = Convert.ToInt32(binary, 2);
+int decimalFromOctal = Convert.ToInt32(octal, 8);
+int decimalFromHexadecimal = Convert.ToInt32(hexadecimal, 16);
+
+
+
+// Linq 사용하기
+using System.Linq;
+int[] answer = num_list.Skip(n - 1).ToArray(); // Skip(넘길 요소의 개수)
+
+// 대소문자 변환
+string lowStr = str.ToLower();
+
